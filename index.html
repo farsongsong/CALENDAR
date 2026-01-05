@@ -2,22 +2,28 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>2026 Calendar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 Photo Calendar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1 class="title">★ 2026 ★</h1>
-
-<div class="buttons">
-  <button id="saveImage">PNG 저장</button>
-  <button id="savePDF">PDF 저장</button>
+<div class="controls">
+  <button id="saveImage">배경화면 저장 (상단 여백 추가)</button>
+  <button id="savePDF">인쇄용 PDF 저장 (원본 비율)</button>
 </div>
 
-<div class="viewport">
-  <div id="calendar-wrapper">
-    <div class="calendar" id="calendar"></div>
+<div id="calendar-canvas">
+  
+  <div class="header-area">
+    <span class="star">☆</span>
+    <h1 class="title">2026</h1>
+    <span class="star">☆</span>
   </div>
+
+  <div class="calendar-grid" id="calendar"></div>
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
